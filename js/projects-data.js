@@ -9,7 +9,7 @@ const PORTFOLIO_DATA = {
     name: "Khaled Hassan",
     role: "UI/UX Designer & Developer",
     heroHeadline: "Designing experiences. Building possibilities.",
-    heroSubtitle: "I’m Khaled Hassan Salam, a UI/UX Designer and Developer focused on creating clean, intuitive, and meaningful digital experiences. I design websites, mobile applications, dashboards, ERP systems, and digital products that combine user experience, visual design, and technology.",
+    heroSubtitle: "I’m Khaled Hassan, a UI/UX Designer and Developer focused on creating clean, intuitive, and meaningful digital experiences. I design websites, mobile applications, dashboards, ERP systems, and digital products that combine user experience, visual design, and technology.",
     smallIntro: "Based in Bangladesh · Available for creative collaborations",
     location: "Bangladesh",
     timezone: "Asia/Dhaka", // Bangladesh Standard Time (BST, UTC+6)
