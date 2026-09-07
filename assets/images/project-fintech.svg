@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+  <circle cx="650" cy="120" r="180" fill="#6366f1" opacity="0.18" filter="url(#glow)"/>
+  <circle cx="150" cy="380" r="150" fill="#ec4899" opacity="0.14" filter="url(#glow)"/>
+
+  <!-- App Window Container -->
+  <g transform="translate(60, 40)">
+    <!-- Window Frame -->
+    <rect width="680" height="420" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5"/>
+    
+    <!-- Titlebar -->
+    <path d="M 0 16 A 16 16 0 0 1 16 0 L 664 0 A 16 16 0 0 1 680 16 L 680 44 L 0 44 Z" fill="#0f172a"/>
+    <circle cx="24" cy="22" r="5" fill="#ef4444"/>
+    <circle cx="42" cy="22" r="5" fill="#f59e0b"/>
+    <circle cx="60" cy="22" r="5" fill="#10b981"/>
+    <rect x="90" y="14" width="180" height="16" rx="8" fill="#1e293b"/>
+    <rect x="520" y="14" width="130" height="16" rx="8" fill="#1e293b"/>
+
+    <!-- Left Sidebar -->
+    <rect x="0" y="44" width="160" height="376" fill="#090d16" opacity="0.6"/>
+    <rect x="20" y="68" width="120" height="28" rx="6" fill="url(#accentGrad)" opacity="0.2"/>
+    <rect x="44" y="78" width="80" height="8" rx="4" fill="#a5b4fc"/>
+    <circle cx="32" cy="82" r="4" fill="#818cf8"/>
+
+    <rect x="20" y="108" width="120" height="24" rx="6" fill="#1e293b" opacity="0.4"/>
+    <rect x="44" y="116" width="70" height="8" rx="4" fill="#64748b"/>
+    <rect x="20" y="142" width="120" height="24" rx="6" fill="#1e293b" opacity="0.4"/>
+    <rect x="44" y="150" width="85" height="8" rx="4" fill="#64748b"/>
+    <rect x="20" y="176" width="120" height="24" rx="6" fill="#1e293b" opacity="0.4"/>
+    <rect x="44" y="184" width="60" height="8" rx="4" fill="#64748b"/>
+
+    <!-- Main Content Area -->
+    <!-- Metric Cards -->
+    <g transform="translate(180, 64)">
+      <!-- Card 1 -->
+      <rect width="145" height="80" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="14" y="30" fill="#94a3b8" font-family="system-ui" font-size="11" font-weight="500">TOTAL VOLUME</text>
+      <text x="14" y="58" fill="#f8fafc" font-family="system-ui" font-size="20" font-weight="700">$2.48M</text>
+      <path d="M 105 52 Q 120 40 135 48" stroke="#10b981" stroke-width="2" fill="none"/>
+      
+      <!-- Card 2 -->
+      <rect x="160" width="145" height="80" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="174" y="30" fill="#94a3b8" font-family="system-ui" font-size="11" font-weight="500">ACTIVE USERS</text>
+      <text x="174" y="58" fill="#f8fafc" font-family="system-ui" font-size="20" font-weight="700">48,290</text>
+      <rect x="260" y="44" width="35" height="18" rx="9" fill="#10b981" opacity="0.2"/>
+      <text x="268" y="57" fill="#34d399" font-family="system-ui" font-size="10" font-weight="700">+14%</text>
+
+      <!-- Card 3 -->
+      <rect x="320" width="160" height="80" rx="10" fill="url(#accentGrad)" opacity="0.9"/>
+      <text x="334" y="30" fill="#e0e7ff" font-family="system-ui" font-size="11" font-weight="600">ANALYTICS ENGINE</text>
+      <text x="334" y="58" fill="#ffffff" font-family="system-ui" font-size="19" font-weight="800">Real-Time Sync</text>
+    </g>
+
+    <!-- Main Chart Area -->
+    <g transform="translate(180, 160)">
+      <rect width="480" height="235" rx="12" fill="#131d31" stroke="#1e293b" stroke-width="1"/>
+      <!-- Grid lines -->
+      <line x1="20" y1="50" x2="460" y2="50" stroke="#1e293b" stroke-dasharray="4 4"/>
+      <line x1="20" y1="100" x2="460" y2="100" stroke="#1e293b" stroke-dasharray="4 4"/>
+      <line x1="20" y1="150" x2="460" y2="150" stroke="#1e293b" stroke-dasharray="4 4"/>
+      <line x1="20" y1="200" x2="460" y2="200" stroke="#1e293b"/>
+
+      <path d="M 30 180 C 80 160, 120 120, 170 130 C 220 140, 260 80, 310 90 C 360 100, 400 40, 450 45 L 450 200 L 30 200 Z" fill="url(#accentGrad)" fill-opacity="0.15"/>
+      <path d="M 30 180 C 80 160, 120 120, 170 130 C 220 140, 260 80, 310 90 C 360 100, 400 40, 450 45" stroke="url(#accentGrad)" stroke-width="3.5" fill="none"/>
+      
+      <!-- Interactive Data Node Pointer -->
+      <circle cx="310" cy="90" r="6" fill="#a855f7" stroke="#ffffff" stroke-width="2"/>
+      <rect x="270" y="55" width="80" height="24" rx="6" fill="#0f172a" stroke="#6366f1" stroke-width="1"/>
+      <text x="282" y="71" fill="#f8fafc" font-family="system-ui" font-size="10" font-weight="600">$184.5k/mo</text>
+    </g>
+  </g>
+</svg>

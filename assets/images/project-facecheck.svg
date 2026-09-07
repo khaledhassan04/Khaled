@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fcBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#061a24"/>
+    </linearGradient>
+    <linearGradient id="scanBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="fcGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#fcBg)"/>
+  <circle cx="280" cy="240" r="170" fill="#10b981" opacity="0.14" filter="url(#fcGlow)"/>
+
+  <!-- Left Center: Mobile Phone Mockup -->
+  <g transform="translate(120, 35)">
+    <!-- Device body -->
+    <rect width="250" height="430" rx="34" fill="#0b1320" stroke="#1f293d" stroke-width="2.5"/>
+    <rect x="85" y="10" width="80" height="18" rx="9" fill="#000000"/>
+    <circle cx="150" cy="19" r="3" fill="#1e293b"/>
+
+    <!-- App Header -->
+    <g transform="translate(20, 42)">
+      <text x="0" y="12" fill="#94a3b8" font-family="system-ui" font-size="9" font-weight="600">FACECHECK &bull; RESTAURANT #04</text>
+      <text x="0" y="32" fill="#ffffff" font-family="system-ui" font-size="16" font-weight="800">Biometric Check-In</text>
+    </g>
+
+    <!-- Face Recognition Scanner Frame -->
+    <g transform="translate(20, 92)">
+      <rect width="210" height="210" rx="20" fill="#070c14" stroke="#1e293b" stroke-width="1.5"/>
+      <!-- Corner Reticles -->
+      <!-- Top Left -->
+      <path d="M 20 40 L 20 20 L 40 20" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- Top Right -->
+      <path d="M 170 20 L 190 20 L 190 40" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- Bottom Left -->
+      <path d="M 20 170 L 20 190 L 40 190" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- Bottom Right -->
+      <path d="M 170 190 L 190 190 L 190 170" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <!-- Stylized Face Outline & Mesh Points -->
+      <ellipse cx="105" cy="100" rx="42" ry="54" fill="none" stroke="#334155" stroke-dasharray="3 3" stroke-width="1.5"/>
+      <circle cx="90" cy="90" r="3.5" fill="#10b981"/>
+      <circle cx="120" cy="90" r="3.5" fill="#10b981"/>
+      <circle cx="105" cy="105" r="3" fill="#38bdf8"/>
+      <path d="M 95 125 Q 105 135 115 125" stroke="#10b981" stroke-width="2" fill="none"/>
+
+      <!-- Scanning Laser Line -->
+      <line x1="25" y1="105" x2="185" y2="105" stroke="url(#scanBeam)" stroke-width="2.5"/>
+      
+      <!-- Verified Floating Badge -->
+      <rect x="40" y="160" width="130" height="28" rx="14" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+      <text x="56" y="178" fill="#a7f3d0" font-family="system-ui" font-size="10" font-weight="700">&check; Match: 99.4%</text>
+    </g>
+
+    <!-- Quick Check-in / Check-out Toggle Bar -->
+    <g transform="translate(20, 316)">
+      <rect width="210" height="42" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <rect x="4" y="4" width="100" height="34" rx="8" fill="url(#scanBeam)"/>
+      <text x="24" y="25" fill="#ffffff" font-family="system-ui" font-size="11" font-weight="800">Check In</text>
+      <text x="126" y="25" fill="#94a3b8" font-family="system-ui" font-size="11" font-weight="600">Check Out</text>
+    </g>
+
+    <!-- Bottom Status Card -->
+    <g transform="translate(20, 370)">
+      <rect width="210" height="36" rx="8" fill="#141f30"/>
+      <text x="12" y="22" fill="#cbd5e1" font-family="system-ui" font-size="10">Tanvir Ahmed &bull; Shift 10:00 AM</text>
+    </g>
+  </g>
+
+  <!-- Right: Key UX Innovations for Restaurant Staff -->
+  <g transform="translate(420, 80)">
+    <rect width="320" height="85" rx="14" fill="#0e1726" stroke="#1e293b" stroke-width="1.5"/>
+    <circle cx="32" cy="34" r="14" fill="#10b981" opacity="0.2"/>
+    <text x="26" y="40" fill="#10b981" font-family="system-ui" font-size="13" font-weight="bold">&bull;</text>
+    <text x="58" y="32" fill="#ffffff" font-family="system-ui" font-size="13" font-weight="700">Sub-Second Facial Attendance</text>
+    <text x="58" y="50" fill="#94a3b8" font-family="system-ui" font-size="11">Zero touchpoints, perfect for kitchen &amp; restaurant environments where hands may be busy.</text>
+
+    <rect y="100" width="320" height="85" rx="14" fill="#0e1726" stroke="#1e293b" stroke-width="1.5"/>
+    <circle cx="32" cy="134" r="14" fill="#06b6d4" opacity="0.2"/>
+    <text x="26" y="140" fill="#06b6d4" font-family="system-ui" font-size="13" font-weight="bold">&bull;</text>
+    <text x="58" y="132" fill="#ffffff" font-family="system-ui" font-size="13" font-weight="700">Store-Based Multi-Branch Access</text>
+    <text x="58" y="150" fill="#94a3b8" font-family="system-ui" font-size="11">Store managers easily register employees and restrict access across different branches.</text>
+
+    <rect y="200" width="320" height="85" rx="14" fill="#0e1726" stroke="#1e293b" stroke-width="1.5"/>
+    <circle cx="32" cy="234" r="14" fill="#8b5cf6" opacity="0.2"/>
+    <text x="26" y="240" fill="#8b5cf6" font-family="system-ui" font-size="13" font-weight="bold">&bull;</text>
+    <text x="58" y="232" fill="#ffffff" font-family="system-ui" font-size="13" font-weight="700">Frictionless Check-in / Check-out</text>
+    <text x="58" y="250" fill="#94a3b8" font-family="system-ui" font-size="11">Minimalist UI eliminating complex menus so staff can complete attendance in 2 seconds.</text>
+  </g>
+</svg>

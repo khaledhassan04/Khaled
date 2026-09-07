@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="healthBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06121e"/>
+      <stop offset="50%" stop-color="#0b1e33"/>
+      <stop offset="100%" stop-color="#142c42"/>
+    </linearGradient>
+    <linearGradient id="ringGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+    <linearGradient id="ringGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="ringGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="healthGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#healthBg)"/>
+  <circle cx="400" cy="250" r="170" fill="#06b6d4" opacity="0.14" filter="url(#healthGlow)"/>
+
+  <!-- Center Mobile Phone Mockup -->
+  <g transform="translate(260, 30)">
+    <!-- Phone Body -->
+    <rect width="280" height="440" rx="36" fill="#0b1320" stroke="#334155" stroke-width="3"/>
+    
+    <!-- Dynamic Island / Speaker notch -->
+    <rect x="95" y="12" width="90" height="20" rx="10" fill="#000000"/>
+    <circle cx="165" cy="22" r="3.5" fill="#1e293b"/>
+
+    <!-- Screen Content -->
+    <!-- Date & Header -->
+    <text x="24" y="60" fill="#94a3b8" font-family="system-ui" font-size="11" font-weight="600">THURSDAY, SEP 7</text>
+    <text x="24" y="85" fill="#ffffff" font-family="system-ui" font-size="22" font-weight="800">Pulse Health</text>
+
+    <!-- Concentric Activity Rings -->
+    <g transform="translate(140, 180)">
+      <!-- Outer Track -->
+      <circle cx="0" cy="0" r="65" fill="none" stroke="#334155" stroke-width="10" opacity="0.4"/>
+      <circle cx="0" cy="0" r="65" fill="none" stroke="url(#ringGrad1)" stroke-width="10" stroke-linecap="round" stroke-dasharray="350" stroke-dashoffset="80"/>
+
+      <!-- Middle Track -->
+      <circle cx="0" cy="0" r="48" fill="none" stroke="#334155" stroke-width="10" opacity="0.4"/>
+      <circle cx="0" cy="0" r="48" fill="none" stroke="url(#ringGrad2)" stroke-width="10" stroke-linecap="round" stroke-dasharray="270" stroke-dashoffset="60"/>
+
+      <!-- Inner Track -->
+      <circle cx="0" cy="0" r="31" fill="none" stroke="#334155" stroke-width="10" opacity="0.4"/>
+      <circle cx="0" cy="0" r="31" fill="none" stroke="url(#ringGrad3)" stroke-width="10" stroke-linecap="round" stroke-dasharray="180" stroke-dashoffset="30"/>
+    </g>
+
+    <!-- Stat Cards inside Phone -->
+    <g transform="translate(20, 270)">
+      <!-- Stat 1: Heart Rate -->
+      <rect width="112" height="75" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="24" fill="#f43f5e" font-family="system-ui" font-size="10" font-weight="700">&hearts; HEART RATE</text>
+      <text x="12" y="52" fill="#ffffff" font-family="system-ui" font-size="19" font-weight="800">68 <tspan font-size="11" fill="#94a3b8" font-weight="500">BPM</tspan></text>
+      <text x="12" y="66" fill="#10b981" font-family="system-ui" font-size="9">&bull; Resting Normal</text>
+
+      <!-- Stat 2: Active Calories -->
+      <rect x="128" width="112" height="75" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="140" y="24" fill="#38bdf8" font-family="system-ui" font-size="10" font-weight="700">&bull; RECOVERY</text>
+      <text x="140" y="52" fill="#ffffff" font-family="system-ui" font-size="19" font-weight="800">94<tspan font-size="11" fill="#94a3b8" font-weight="500">%</tspan></text>
+      <text x="140" y="66" fill="#38bdf8" font-family="system-ui" font-size="9">&bull; Peak Readiness</text>
+    </g>
+
+    <!-- Bottom Navigation Bar inside Phone -->
+    <g transform="translate(20, 360)">
+      <rect width="240" height="48" rx="24" fill="#131d2e" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="50" cy="24" r="6" fill="#38bdf8"/>
+      <circle cx="120" cy="24" r="5" fill="#64748b"/>
+      <circle cx="190" cy="24" r="5" fill="#64748b"/>
+    </g>
+  </g>
+</svg>

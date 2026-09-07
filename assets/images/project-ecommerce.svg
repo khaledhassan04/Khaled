@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ecomBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="50%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#27272a"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#ecomBg)"/>
+
+  <!-- Minimalist Luxury Showcase Window -->
+  <g transform="translate(60, 45)">
+    <rect width="680" height="410" rx="16" fill="#18181b" stroke="#27272a" stroke-width="1.5"/>
+
+    <!-- Top nav -->
+    <rect width="680" height="48" rx="16" fill="#09090b"/>
+    <text x="30" y="30" fill="#ffffff" font-family="system-ui" font-size="14" font-weight="800" letter-spacing="3">A T E L I E R</text>
+    <text x="240" y="29" fill="#a1a1aa" font-family="system-ui" font-size="11">COLLECTIONS</text>
+    <text x="350" y="29" fill="#a1a1aa" font-family="system-ui" font-size="11">EDITIONS</text>
+    <text x="440" y="29" fill="#a1a1aa" font-family="system-ui" font-size="11">SPATIAL 3D</text>
+    <rect x="580" y="14" width="70" height="22" rx="11" fill="#27272a"/>
+    <text x="596" y="28" fill="#e4e4e7" font-family="system-ui" font-size="10">BAG (2)</text>
+
+    <!-- Split view: 3D Product interactive card on left, details on right -->
+    <g transform="translate(30, 70)">
+      <!-- Left 3D Canvas Box -->
+      <rect width="320" height="300" rx="12" fill="#09090b" stroke="#3f3f46" stroke-width="1"/>
+      <circle cx="160" cy="140" r="90" fill="#27272a" opacity="0.6"/>
+      <!-- Stylized geometric product sculpture -->
+      <polygon points="160,70 230,120 160,170 90,120" fill="#e4e4e7" opacity="0.9"/>
+      <polygon points="90,120 160,170 160,220 90,170" fill="#71717a"/>
+      <polygon points="230,120 160,170 160,220 230,170" fill="#a1a1aa"/>
+      <text x="110" y="270" fill="#71717a" font-family="system-ui" font-size="11" font-weight="500">&harr; Drag to rotate 3D mesh</text>
+    </g>
+
+    <!-- Right Side Details -->
+    <g transform="translate(380, 80)">
+      <text x="0" y="20" fill="#f59e0b" font-family="system-ui" font-size="11" font-weight="700" letter-spacing="2">LIMITED RELEASE</text>
+      <text x="0" y="55" fill="#ffffff" font-family="system-ui" font-size="24" font-weight="800">Prism Chrono 01</text>
+      <text x="0" y="85" fill="#71717a" font-family="system-ui" font-size="13" line-height="1.5">Monolithic titanium build with sapphire crystal housing and tactile haptic feedback.</text>
+      <text x="0" y="130" fill="#ffffff" font-family="system-ui" font-size="28" font-weight="700">$1,450</text>
+      
+      <!-- Color swatch selector -->
+      <text x="0" y="170" fill="#a1a1aa" font-family="system-ui" font-size="11">FINISH:</text>
+      <circle cx="60" cy="166" r="10" fill="#e4e4e7" stroke="#3b82f6" stroke-width="2"/>
+      <circle cx="90" cy="166" r="10" fill="#27272a"/>
+      <circle cx="120" cy="166" r="10" fill="#d97706"/>
+
+      <!-- Button -->
+      <rect x="0" y="205" width="220" height="46" rx="8" fill="#ffffff"/>
+      <text x="60" y="233" fill="#09090b" font-family="system-ui" font-size="13" font-weight="700">Add to Bag &bull; Instant AR</text>
+    </g>
+  </g>
+</svg>
